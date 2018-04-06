@@ -1,0 +1,58 @@
+<html>
+  <head>
+  <title>NCWIT: Visualizing Majors and Declaration Time</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="mozilla.css">
+  </head>
+
+  <body>
+
+    <div class="content">
+        <h2 class="graph-title">How many tech terms can do people say they can explain to a friend?</h2>
+        <p class="graph-subtitle">One of the questions on the <a href="https://www.surveygizmo.com/s3/3643927/091fb5d9e0e1">Mozilla survey</a> was:</p>
+        <p>Check all the terms below that you could explain to a friend:</p>
+        <ul>
+      <li>IoT</li>
+      <li>Connected Devices</li>
+      <li>Botnet</li>
+      <li>Blockchain</li>
+      <li>RFID</li>
+      <li>DDOS</li>
+      <li>Zero Day</li>
+      <li>VPN</li>
+      <li>TOR</li>
+      <li>I don't know what any of these things are</li>
+    </ul>
+<p>This series of maps explores how people answered this question, by country. You can see the average number of terms people said they could explain, and the most/least explainable term.</p>
+</div>
+
+<div id="viz1">
+    <h3 class="graph-title">Average Number of Explainable Tech Terms, by Country</h3>
+      <p>Hover over a country to find out more information, and click on it to see a list of how frequently people said they could explain all the tech terms.</p>
+    <iframe width="100%" height="600" frameborder="0" src="https://jordanwb.carto.com/viz/e8aecd24-9b65-4c90-971c-e78553ecc431/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+</div>
+
+<div class="viz2">
+<h3 class="graph-title">Most and Least Explainable Tech Terms, by Country</h3>
+  <p>Show me the <button class="tabButton" id="most">Most</button> / <button class="tabButton" id="least">Least</button> explainable terms, by country.</p>
+  <p>Hover over a country to find out more information.</p>
+</div>
+
+  <div id="most-content">
+  <iframe width="100%" height="600" frameborder="0" src="https://jordanwb.carto.com/viz/9e88fc70-f782-4fce-b480-4ec898cd5d16/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+</div>
+
+<div class="content" id="least-content">
+  <iframe width="100%" height="600" frameborder="0" src="https://jordanwb.carto.com/viz/61919ec6-3484-4770-af98-bf5391c5740b/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+</div>
+
+<h3 class="graph-title">Audio-Tactile Map: Top Explainable Terms</h3>
+<p>We also wanted to explore this information in a more creative way, so we made a physicalization using a micro:bit controller with the <a href="http://microbit-micropython.readthedocs.io/en/latest/tutorials/speech.html">speech module</a>, a physical map, and a speaker. A creepy computer Dalek voice reads the top explainable terms when you touch a country to complete a circuit. We chose the Dalek voice because a major theme of the Mozilla survey was fear and anxiety about the future of technology. (Also, micro:bit is created by the BBC.) This video shows you a demo of the map.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S8flot1YSv0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="mozilla.js"></script>
+  </body>
+  </html>
