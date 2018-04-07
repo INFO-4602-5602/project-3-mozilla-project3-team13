@@ -84,7 +84,7 @@ For this visualization, I used D3.js to build the visualization as a way to rein
 While making this visualization, I also attempted to add in some various transitions, such as a button that would update the data with the same comparisons, but using only responses from the United States. However, I would need to improve on my D3.js skills in order to make it work. Overall, designing this visualization was helpful in reinforcing using D3.js, along with understanding how to clean a large dataset.
 
 ## Team roles for each individual
-### Jordan: Visualization 1, documentation
+### Taylor: Visualization 1, documentation
+### Jordan: Visualization 2, documentation 
 ### Jen: Visualization 3, documentation
-### Taylor: Visualization 2, documentation 
 ### Marissa: Visualization assistance with 2 (audio tactile maps)
